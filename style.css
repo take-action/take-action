@@ -1,0 +1,42 @@
+header, body, footer {
+  padding: 0;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1519636243899-5544aa477f70?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=21531763dc7f062effed3a2569519893&auto=format&fit=crop&w=1350&q=80");
+  color: black;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  padding: 15px;
+  margin: 0;
+}
+
+ul {
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    margin: 0;
+  }
+
+li {
+    display: inline;
+    padding: 0px 50px;
+  }
+
+  a:link, a:visited {
+      color: white;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+  }
+
+  a:hover, a:active {
+      background-color: rgba(0,0,0,0.3);
+  }
