@@ -37,7 +37,7 @@ body {
 
 .navbar-default .navbar-left li a:hover,
 .navbar-default .navbar-left li a:focus {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.5);
     color: white;
 }
 
@@ -84,6 +84,11 @@ body {
 .container #bio {
   text-align: center;
   font-size: 2em;
+  padding: 80px 0 80px 0;
+}
+
+.bio-text {
+  font-size: 15px;
 }
 
 .profile img {
@@ -93,8 +98,25 @@ body {
   border: 3px solid white;
 }
 
+.bio-socials li {
+  list-style: none;
+  display: inline-block;
+  padding: 30px;
+}
+
+.bio-socials li a {
+  color: white;
+}
+
+.bio-socials li a:hover,
+.bio-socials li a:focus {
+    text-decoration: none;
+    color: rgba(0,172,237,1);
+}
+
 #form-title {
   text-align: center;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 767px) {
