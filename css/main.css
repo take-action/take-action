@@ -12,7 +12,7 @@ body {
 
 /* Navbar */
 .navbar-default {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.45);
   border-style: none;
 }
 
@@ -31,13 +31,13 @@ body {
 .navbar-default .navbar-nav #the_problem,
 .navbar-default .navbar-nav #how_to_help,
 .navbar-default .navbar-nav #about_us {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.6);
     color: white;
 }
 
 .navbar-default .navbar-left li a:hover,
 .navbar-default .navbar-left li a:focus {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.6);
     color: white;
 }
 
@@ -45,6 +45,18 @@ body {
 .navbar-default .navbar-nav > li > a {
   color: white;
   padding: 20px;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
 /* Title */
@@ -58,7 +70,7 @@ body {
 }
 
 .title {
-  font-size: 50px;
+  font-size: 10vw;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -80,15 +92,21 @@ body {
   margin-top: 80px;
 }
 
+/* The Problem */
+#human-trafficking img {
+  width: 60px;
+}
+
 /* About Us */
 .container #bio {
   text-align: center;
   font-size: 2em;
-  padding: 80px 0 80px 0;
+  padding: 60px 0 60px 0;
 }
 
 .bio-text {
   font-size: 15px;
+  
 }
 
 .profile img {
@@ -98,25 +116,70 @@ body {
   border: 3px solid white;
 }
 
+.bio-socials {
+  padding: 0;
+}
+
 .bio-socials li {
   list-style: none;
   display: inline-block;
-  padding: 30px;
+  padding: 30px 20px 10px 20px;
 }
 
 .bio-socials li a {
   color: white;
 }
 
-.bio-socials li a:hover,
-.bio-socials li a:focus {
+.bio-socials .twitter a:hover,
+.bio-socials .twitter a:focus {
     text-decoration: none;
     color: rgba(0,172,237,1);
+}
+
+.bio-socials .linkedin a:hover,
+.bio-socials .linkedin a:focus {
+    text-decoration: none;
+    color: rgba(0,119,181,1);
+}
+
+.bio-socials .insta a:hover,
+.bio-socials .insta a:focus {
+    text-decoration: none;
+    color: rgba(251,57,88,1);
 }
 
 #form-title {
   text-align: center;
   font-size: 30px;
+  padding-bottom: 15px;
+}
+
+.form {
+  margin-bottom: 80px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form input {
+  flex:1;
+  margin-right: 10px;
+}
+
+.button {
+  background-color: red;
+  border-color: rgb(192,57,43);
+  border-width: 2px;
+  border-radius: 4px;
+  align-self: stretch;
 }
 
 @media screen and (max-width: 767px) {
