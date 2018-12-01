@@ -5,13 +5,14 @@
     <title>Take Action</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Special+Elite" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <script
-      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/typed.min.js"></script>
   </head>
 
   <body>
@@ -35,15 +36,15 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-left">
-            <li><a href="index.html" class="the_problem" id="the_problem">The Problem</a></li>
-            <li><a href="how_to_help.html" class="how_to_help">How To Help</a></li>
-            <li><a href="about_us.html" class="about_us">About Us</a></li>
+            <li><a href="index.html#the-problem" class="active">The Problem</a></li>
+            <li><a href="how_to_help.html">How To Help</a></li>
+            <li><a href="about_us.html">About Us</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
                 <li><a href="#" class="fa fa-envelope fa-lg"></a></li>
-                <li><a href="#" class="fab fa-twitter fa-lg"></a></li>
-                <li><a href="#" class="fab fa-instagram fa-lg"></a></li>
-                <li><a href="#" class="fab fa-facebook fa-lg"></a></li>
+                <li><a href="https://twitter.com" class="fab fa-twitter fa-lg"></a></li>
+                <li><a href="https://instagram.com" class="fab fa-instagram fa-lg"></a></li>
+                <li><a href="https://facebook.com" class="fab fa-facebook fa-lg"></a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -51,105 +52,98 @@
 
     <!-- Title Page -->
     <div class="title-page">
-      <div class="title">Take Action</div>
-      <div class="arrow">
+      <div class="title"></div>
+      <div id="the-problem" class="arrow">
         <i class="fas fa-angle-down"></i>
       </div>
     </div>
 
-    <div class="row">
-        <div class="page-title">The Problem</div>
-    </div>
+    <div class="content">
+      <div class="page-title home-page-title">The Problem</div>
 
-    <div id="human-trafficking">
-      <h1>Human trafficking is...</h1>
-      <ul>
-        <li>slavery</li>
-        <li>the illegal trade of human beings</li>
-        <li>the recruitment, control, and use of people for their bodies and for their labour</li>
-        <li>physical, verbal, and sexual abuse</li>
-        <li>forced prostitution</li>
-        <li>barbaric working conditions</li>
-      </ul>
+    <!-- Page Content -->
 
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?ixlib=rb-0.3.5&s=e395281afc79dcd26159bd27f6413fba&auto=format&fit=crop&w=667&q=80" alt="image-of-a-person">
-              <p>There are millions of slaves  in the world today, more than ever before in human history</p>
-          </div>
-          <div class="col-sm-4">
-            <img src="https://images.unsplash.com/uploads/141291689208928c65782/a1d1cdc2?ixlib=rb-0.3.5&s=049515e8ade656902645df96a53717ce&auto=format&fit=crop&w=889&q=80" alt="image-of-a-person">
-              <p>1% of victims are rescued</p>
-          </div>
-          <div class="col-sm-4">
-              <p>Human trafficking is the fastest growing criminal industry in the world estimated at $150 USD</p>
-          </div>
+      <div class="human-trafficking">
+        <h1>Human trafficking is...</h1>
+        <ul>
+          <li>Slavery</li>
+          <li>The illegal trade of human beings</li>
+          <li>The recruitment, control, and use of people for their bodies and for their labour</li>
+          <li>Physical, verbal, and sexual abuse</li>
+          <li>Forced prostitution</li>
+          <li>Barbaric working conditions</li>
+        </ul>
+        <img src="https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?ixlib=rb-0.3.5&s=e395281afc79dcd26159bd27f6413fba&auto=format&fit=crop&w=667&q=80" alt="image-of-a-person">
+        <img src="https://images.unsplash.com/uploads/141291689208928c65782/a1d1cdc2?ixlib=rb-0.3.5&s=049515e8ade656902645df96a53717ce&auto=format&fit=crop&w=889&q=80" alt="image-of-a-person">
+      </div>
+
+      <div class="info">
+        <div class="types">
+          <h3>Types of trafficking</h3>
+          <ul>
+            <li>Sex trafficking</li>
+            <li>Forced Labour</li>
+            <li>Bonded Labour</li>
+            <li>Involuntary domestic servitude</li>
+            <li>Child soldiers</li>
+          </ul>
+        </div>
+        <div class="how">
+          <h3>How they're trafficked</h3>
+          <ul>
+            <li>False job advertisement</li>
+            <li>Sold by family</li>
+            <li>Loverboy</li>
+            <li>Abduction</li>
+            <li>Trafficked by friend</li>
+            <li>False immigration</li>
+          </ul>
+        </div>
+        <div class="signs">
+          <h3>Signs of Human Trafficking</h3>
+          <ul>
+            <li>Controlled by another person</li>
+            <li>Controlled movement</li>
+            <li>Lack of earnings</li>
+            <li>Foreign, unfamiliar with the language</li>
+            <li>Overly fearful, depressed, and submissive behaviour</li>
+            <li>Bad health and malnutrition</li>
+            <li>Lacl of official identification</li>
+            <li>Signs of physical abuse</li>
+            <li>Substance abuse</li>
+            <li>Lack of trust</li>
+            <li>Lack of personal belongings</li>
+            <li>Signs of dependence</li>
+          </ul>
         </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-md-4">
-        Types of trafficking
-        <ul>
-          <li>SEX TRAFFICKING</li>
-          <li>FORCED LABOR</li>
-          <li>BONDED LABOR</li>
-          <li>INVOLUNTARY DOMESTIC SERVITUDE</li>
-          <li>CHILD SOLDIERS</li>
-        </ul>
+      <div class="facts">
+        <div class="fact-1">
+          <p>There are millions of slaves  in the world today, more than ever before in human history</p>
+        </div>
+        <div class="fact-2">
+          <p>1% of victims are rescued</p>
+        </div>
+        <div class="fact-3">
+          <p>Human trafficking is the fastest growing criminal industry in the world estimated at $150b USD</p>
+        </div>
       </div>
-      <div class="col-md-4">
-        How they're trafficked
-        <ul>
-          <li>FALSE JOB ADVERTISEMENT</li>
-          <li>SOLD BY FAMILY</li>
-          <li>LOVERBOY</li>
-          <li>ABDUCTION</li>
-          <li>TRAFFICKED BY FRIEND</li>
-          <li>FALSE IMMIGRATION</li>
-        </ul>
-      </div>
-      <div class="col-md-4">
-        Signs of Human Trafficking
-        <ul>
-          <li>CONTROLLED BY ANOTHER PERSON</li>
-          <li>CONTROLLED MOVEMENT</li>
-          <li>LACK OF EARNINGS</li>
-          <li>FOREIGN, UNFAMILIAR WITH THE LANGUAGE</li>
-          <li>OVERLY FEARFUL, DEPRESSED, AND SUBMISSIVE BEHAVIOR</li>
-          <li>BAD HEALTH AND MALNUTRITION</li>
-          <li>LACK OF OFFICIAL IDENTIFICATION</li>
-          <li>SIGNS OF PHYSICAL ABUSE</li>
-          <li>SUBSTANCE ABUSE</li>
-          <li>LACK OF TRUST</li>
-          <li>LACK OF PERSONAL BELONGINGS</li>
-          <li>SIGNS OF DEPENDENCE</li>
-          <li>DECEIVED BY A FALSE JOB OFFER</li>
-          <li>FEELINGS OF BEING TRAPPED</li>
-        </ul>
-      </div>
+
     <br></br>
 <blockquote>
 <h2>"When a lot of people do a little, it adds up and makes a difference." </h2>
   <h4> Christine Caine, A21 Founder </h4>
 </blockquote>
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 profile">
-            <div>1 person is trafficked every 40 seconds</div>
-          </div>
-          <div class="col-lg-4 profile">
-            <div id="traffic-count">0 People trafficked since you visited this site</div>
-          </div>
-          <div class="col-lg-4 profile">
-            <div id="timer">0s</div>
-          </div>
-        </div>
-    </footer>
+</div>
+
+<footer>
+    <div class="statement">1 person is trafficked every 40 seconds</div>
+    <div class="timer">40s</div>
+    <div class="traffic-count">0 People trafficked since visiting this site</div>
+  </div>
+</footer>
 
 
     <script src="js/main.js"></script>

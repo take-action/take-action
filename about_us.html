@@ -5,13 +5,14 @@
     <title>About Us</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Special+Elite" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <script
-      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/typed.min.js"></script>
   </head>
 
   <body>
@@ -35,9 +36,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-left">
-            <li><a href="index.html" class="the_problem">The Problem</a></li>
-            <li><a href="how_to_help.html" class="how_to_help">How To Help</a></li>
-            <li><a href="about_us.html" class="about_us" id="about_us">About Us</a></li>
+            <li><a href="index.html#the-problem">The Problem</a></li>
+            <li><a href="how_to_help.html">How To Help</a></li>
+            <li><a href="about_us.html" class="active">About Us</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
                 <li><a href="#" class="fa fa-envelope fa-lg"></a></li>
@@ -50,12 +51,9 @@
     </nav>
 
     <!-- Title -->
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="page-title">About Us</div>
-      </div>
-    </div>
-    <div class="container">
+
+    <div class="container content">
+      <div class="page-title">About Us</div>
       <div class="row" id="bio">
         <div class="col-lg-6 profile">
           <div>Anna-Marie</div>
@@ -78,37 +76,22 @@
           </ul>
         </div>
       </div>
-    </div>
 
-    <div class="container" id="form-title">
-      <div class="row">
-        <div class="col-lg-12">
-          <div>Stay Up To Date</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container form">
+      <div class="form">
+        <h2 class="form-title">Stay Up To Date</h2>
 				<p class="intro">Sign up for Take Action's monthly newsletter</p>
-					<form>
-					 	<input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email address">
-					  <button class="button" onclick="alert('Email Submitted.')">Submit</button>
-					</form>
-		</div>
+				<form>
+				 	<input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email address">
+				  <button class="button" onclick="alert('Signed up!')">Submit</button>
+				</form>
+  		</div>
+    </div>
 
     <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 profile">
-            <div>1 person is trafficked every 40 seconds</div>
-          </div>
-          <div class="col-lg-4 profile">
-            <div id="traffic-count">0 People trafficked since you visited this site</div>
-          </div>
-          <div class="col-lg-4 profile">
-            <div id="timer">0s</div>
-          </div>
-        </div>
+        <div class="statement">1 person is trafficked every 40 seconds</div>
+        <div class="timer">40s</div>
+        <div class="traffic-count">0 People trafficked since visiting this site</div>
+      </div>
     </footer>
 
     <script src="js/main.js"></script>

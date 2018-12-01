@@ -1,7 +1,12 @@
+/* * {
+  outline: 1px solid red;
+} */
+
 header, body, footer {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
+
 }
 
 body {
@@ -12,7 +17,7 @@ body {
 
 /* Navbar */
 .navbar-default {
-  background-color: rgba(0,0,0,0.45);
+  background-color: rgb(0,0,0);
   border-style: none;
 }
 
@@ -28,16 +33,16 @@ body {
 }
 
 /*links*/
-.navbar-default .navbar-nav #the_problem,
-.navbar-default .navbar-nav #how_to_help,
-.navbar-default .navbar-nav #about_us {
-    background-color: rgba(0,0,0,0.6);
+.navbar-default .navbar-nav .active {
+    text-decoration: underline;
     color: white;
 }
 
 .navbar-default .navbar-left li a:hover,
-.navbar-default .navbar-left li a:focus {
-    background-color: rgba(0,0,0,0.6);
+.navbar-default .navbar-left li a:focus,
+.navbar-default .navbar-right li a:hover,
+.navbar-default .navbar-right li a:focus {
+    background-color: rgba(255,255,255,0.07);
     color: white;
 }
 
@@ -55,14 +60,20 @@ footer {
     width: 100%;
     background-color: black;
     color: white;
-    padding: 10px;
-    text-align: center;
+    padding: 15px 10px;
+    display: flex;
+}
+
+.statement, .traffic-count, .timer {
+  flex: 1;
+  text-align: center;
+  padding: 0 20px;
 }
 
 /* Title */
 .title-page {
   width: 100%;
-  height: calc(100vh - 60px - 120px);
+  height: calc(100vh - 60px - 50px);
   display: flex;
   flex-direction: column;
   background-color: black;
@@ -77,6 +88,11 @@ footer {
   justify-content: center;
   align-items: center;
   padding-top: 57px;
+  font-family: 'Special Elite', cursive;
+}
+
+.typed-cursor {
+  display: none;
 }
 
 .arrow {
@@ -89,24 +105,102 @@ footer {
 .page-title {
   font-size: 50px;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 65px;
+}
+
+.page-title.home-page-title {
+  margin-top: 30px;
 }
 
 /* The Problem */
+.content {
+  display: flex;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(0,0,0,0.6);
+  padding: 0 20px 60px 20px;
+}
+
+.human-trafficking h1 {
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0 0 0;
+}
+
+.types, .how, .signs {
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 0 20px 0;
+}
+
+.facts {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 20px 0 0 0;
+}
+
+.fact-1, .fact-2, .fact-3 {
+  flex: 1;
+  margin: 0 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #333333;
+}
+.fact-1 p, .fact-2 p, .fact-3 p {
+  margin: 0;
+}
+
+.human-trafficking img {
+  width: 200px;
+}
+
 #human-trafficking img {
   width: 60px;
+}
+
+/* How To Help */
+.reach-rescue-restore {
+  list-style: none;
+  text-align: center;
+}
+
+.reach-rescue-restore li {
+  font-size: 30px;
+  padding: 30px 0 10px 0;
+}
+
+.fa-registered {
+  font-size: 50px;
 }
 
 /* About Us */
 .container #bio {
   text-align: center;
   font-size: 2em;
-  padding: 60px 0 60px 0;
+  padding: 40px 0;
 }
 
 .bio-text {
   font-size: 15px;
-  
+
 }
 
 .profile img {
@@ -148,15 +242,8 @@ footer {
     color: rgba(251,57,88,1);
 }
 
-#form-title {
-  text-align: center;
-  font-size: 30px;
-  padding-bottom: 15px;
-}
-
 .form {
-  margin-bottom: 80px;
-  padding-bottom: 25px;
+  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -185,5 +272,10 @@ footer {
 @media screen and (max-width: 767px) {
     .title-page {
       margin-top: 50px;
+    }
+
+    .navbar-default .navbar-brand img {
+      width: 35px;
+      height: 35px;
     }
 }
