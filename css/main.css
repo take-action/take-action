@@ -285,20 +285,12 @@ footer {
   margin: 0 20px 20px 20px;
   padding: 10px;
   border-radius: 5px;
-<<<<<<< HEAD
   background: white;
-=======
-  background:white;
->>>>>>> 7dc7d4d71aa82e04a1dc69bea0d491ab9b0ca327
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-<<<<<<< HEAD
   color: #333333;
-=======
-  color: #333333 ;
->>>>>>> 7dc7d4d71aa82e04a1dc69bea0d491ab9b0ca327
 }
 
 .country-name {
