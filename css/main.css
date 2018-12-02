@@ -260,6 +260,22 @@ footer {
 .join-us {
   display: flex;
   flex-direction: column;
+  width: 800px;
+  margin-left: 20px;
+}
+
+.join-us h2 {
+  align-self: center;
+}
+
+.join-us-text {
+  padding-left: 20px;
+  border-left: solid 3px orangered;
+  margin-top: 5px;
+}
+
+.join-us-text p {
+  padding: 5px 0;
 }
 
 .where-are-we {
