@@ -21,13 +21,14 @@ body {
 .orangered {
     color: orangered;
 }
+
 .gradient {
   height: 100px;
   background-color: orangered;
   background-image:
     radial-gradient(
       orangered
-     
+
     );
 }
 
@@ -142,8 +143,8 @@ footer {
   padding: 0 20px 60px 20px;
 }
 
-.human-trafficking h1 {
-  text-align: center;
+.human-trafficking {
+  margin-top: 30px;
 }
 
 .info {
@@ -199,7 +200,7 @@ footer {
 .who-are-a21 {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin: 50px 0 70px 0;
 }
 
 .who-text h2 {
@@ -218,32 +219,40 @@ footer {
 
 .strategy {
   margin: 40px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .strategy .strategy-intro {
-  font-size: 24px;
   text-align: center;
   margin: 0 0 20px 0;
 }
+
 .strategy .strategy-items .strategy-item {
-  width: 100%;
+  width: 700px;
   margin: 0 0 20px 0;
 }
+
 .strategy .strategy-items .strategy-item .item-title {
-  font-size: 27px;
+  font-size: 20px;
   margin: 0 0 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
 }
+
 .strategy .strategy-items .strategy-item .item-title i.fa-registered {
   margin: 0 5px 0 0;
   font-size: 50px;
   color: orangered;
 }
+
 .strategy .strategy-items .strategy-item .item-title span {
   text-transform: uppercase;
 }
+
 .strategy .strategy-items .strategy-item .item-description {
   font-size: 17px;
   text-align: center;
