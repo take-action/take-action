@@ -261,8 +261,10 @@ footer {
   align-items: center;
 }
 
-.contact-us ul {
-  list-style: none;
+.contact-us p {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .send-email-form {
