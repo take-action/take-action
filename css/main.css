@@ -18,8 +18,8 @@ body {
   background-attachment: fixed;
 }
 
-.red {
-    color: #ff2929;
+.orangered {
+    color: orangered;
 }
 
 /* Navbar */
@@ -172,6 +172,7 @@ footer {
   text-align: center;
   color: #333333;
 }
+
 .fact-1 p, .fact-2 p, .fact-3 p {
   margin: 0;
 }
@@ -208,7 +209,7 @@ footer {
 .strategy .strategy-items .strategy-item .item-title i.fa-registered {
   margin: 0 5px 0 0;
   font-size: 50px;
-  color: #ff2929;
+  color: orangered;
 }
 .strategy .strategy-items .strategy-item .item-title span {
   text-transform: uppercase;
