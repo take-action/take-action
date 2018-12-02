@@ -1,9 +1,6 @@
 /* Scroll */
-$(window).on('scroll', function() {
-  var scrollAmount = window.scrollY
-  if (scrollAmount > 50) {
-    $(".arrow").animate({ opacity: 0});
-  }
+$('.arrow').on('click', function() {
+  $("html, body").animate({ scrollTop: $('.home-page-title').offset().top - 65 });
 })
 
 /* Traffic Count setInterval */
@@ -19,8 +16,8 @@ function writeTrafficCount() {
   }
 }
 
-if (localStorage.getItem('trafficCountIncrement')) {
-  trafficCountIncrement = localStorage.getItem('trafficCountIncrement');
+if (sessionStorage.getItem('trafficCountIncrement')) {
+  trafficCountIncrement = sessionStorage.getItem('trafficCountIncrement');
   writeTrafficCount()
 }
 
@@ -28,7 +25,7 @@ setInterval(increaseTrafficCount, 40000);
 
 function increaseTrafficCount() {
   trafficCountIncrement++;
-  localStorage.setItem('trafficCountIncrement', trafficCountIncrement)
+  sessionStorage.setItem('trafficCountIncrement', trafficCountIncrement)
   writeTrafficCount()
 }
 

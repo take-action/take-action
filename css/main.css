@@ -12,7 +12,14 @@ header, body, footer {
 body {
   background-image: url("https://images.unsplash.com/photo-1530216415517-770949d4cb00?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c8b86f4f90ace055cfe8d51220075122&auto=format&fit=crop&w=1500&q=80");
   color: white;
+  background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.red {
+    color: #ff2929;
 }
 
 /* Navbar */
@@ -96,9 +103,10 @@ footer {
 }
 
 .arrow {
+    cursor: pointer;
     font-size: 40px;
     align-self: center;
-    margin: 20px 20px;
+    margin: 20px 20px 0 0;
 }
 
 /* Page Title */
@@ -109,7 +117,7 @@ footer {
 }
 
 .page-title.home-page-title {
-  margin-top: 30px;
+  margin-top: 5px;
 }
 
 /* The Problem */
@@ -177,18 +185,83 @@ footer {
 }
 
 /* How To Help */
-.reach-rescue-restore {
-  list-style: none;
+.strategy {
+  margin: 40px 0 0 0;
+}
+.strategy .strategy-intro {
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+.strategy .strategy-items .strategy-item {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+.strategy .strategy-items .strategy-item .item-title {
+  font-size: 30px;
+  margin: 0 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.strategy .strategy-items .strategy-item .item-title i.fa-registered {
+  margin: 0 5px 0 0;
+  font-size: 50px;
+  color: #ff2929;
+}
+.strategy .strategy-items .strategy-item .item-title span {
+  text-transform: uppercase;
+}
+.strategy .strategy-items .strategy-item .item-description {
+  font-size: 20px;
   text-align: center;
 }
 
-.reach-rescue-restore li {
-  font-size: 30px;
-  padding: 30px 0 10px 0;
+.countries-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.fa-registered {
-  font-size: 50px;
+.countries-list li {
+  margin: 0 20px 20px 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #333333;
+}
+
+.country-name {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.send-email-form {
+  margin: 0 auto 60px auto;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.send-email-form input, .send-email-form textarea {
+  margin: 0 0 15px 0;
+}
+.send-email-form .button {
+  background-color: red;
+  border-color: rgb(192,57,43);
+  border-width: 2px;
+  border-radius: 4px;
+  align-self: flex-start;
 }
 
 /* About Us */
@@ -242,7 +315,7 @@ footer {
     color: rgba(251,57,88,1);
 }
 
-.form {
+.about-us-form {
   margin-bottom: 60px;
   display: flex;
   flex-direction: column;
@@ -250,18 +323,18 @@ footer {
   align-items: center;
 }
 
-.form form {
+.about-us-form form {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.form input {
+.about-us-form input {
   flex:1;
   margin-right: 10px;
 }
 
-.button {
+.about-us-form .button {
   background-color: red;
   border-color: rgb(192,57,43);
   border-width: 2px;
