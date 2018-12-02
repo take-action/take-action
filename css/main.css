@@ -165,6 +165,7 @@ footer {
   margin: 0 20px;
   padding: 10px;
   border-radius: 5px;
+  border-colour: orangered;
   background: white;
   display: flex;
   justify-content: center;
