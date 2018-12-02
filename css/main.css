@@ -199,7 +199,7 @@ footer {
   margin: 0 0 20px 0;
 }
 .strategy .strategy-items .strategy-item .item-title {
-  font-size: 30px;
+  font-size: 27px;
   margin: 0 0 10px 0;
   display: flex;
   justify-content: center;
@@ -215,8 +215,19 @@ footer {
   text-transform: uppercase;
 }
 .strategy .strategy-items .strategy-item .item-description {
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
+}
+
+.where-are-we {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.world-map {
+  width:700px;
+  margin: 12px 0 12px 0;
 }
 
 .countries-list {
