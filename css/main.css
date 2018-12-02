@@ -164,7 +164,7 @@ footer {
   flex: 1;
   margin: 0 20px;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   border-colour: orangered;
   background: white;
   display: flex;
