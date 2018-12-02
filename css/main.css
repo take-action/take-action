@@ -187,6 +187,26 @@ footer {
 }
 
 /* How To Help */
+.who-are-a21 {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.who-text h2 {
+  margin: 0 0 5px 0;
+}
+
+.who-text p {
+  margin: 0;
+}
+
+.a21-logo {
+  height: 100px;
+  width: 100px;
+  margin-right: 20px;
+}
+
 .strategy {
   margin: 40px 0 0 0;
 }
@@ -264,7 +284,7 @@ footer {
 
 .contact-us p {
   width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
   text-align: center;
 }
 
