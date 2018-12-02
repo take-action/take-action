@@ -200,7 +200,7 @@ footer {
 .who-are-a21 {
   display: flex;
   align-items: center;
-  margin: 50px 0 70px 0;
+  margin: 50px 0 50px 0;
 }
 
 .who-text h2 {
@@ -256,6 +256,11 @@ footer {
 .strategy .strategy-items .strategy-item .item-description {
   font-size: 17px;
   text-align: center;
+}
+
+.join-us {
+  display: flex;
+  flex-direction: column;
 }
 
 .where-are-we {
