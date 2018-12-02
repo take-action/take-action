@@ -131,6 +131,7 @@ footer {
 }
 
 /* The Problem */
+
 .content {
   display: flex;
   width: 100%;
@@ -144,7 +145,22 @@ footer {
 }
 
 .human-trafficking {
+  width: 900px;
+  border-radius: 3%;
   margin-top: 30px;
+  background-image: url("https://images.unsplash.com/photo-1486768801215-35f4fdd73abc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0d734b1c2d494778c9c2121d02ef5d4d&auto=format&fit=crop&w=500&q=60");
+  background-color: black;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.human-tr-text {
+  width: 500px;
+  margin: 20px;
+}
+
+.human-tr-text ul {
+  padding-left: 30px;
 }
 
 .info {
@@ -185,14 +201,6 @@ footer {
 
 .fact-1 p, .fact-2 p, .fact-3 p {
   margin: 0;
-}
-
-.human-trafficking img {
-  width: 200px;
-}
-
-#human-trafficking img {
-  width: 60px;
 }
 
 /* How To Help */
@@ -261,7 +269,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 800px;
-  margin-left: 20px;
+  margin: 20px auto 0 auto;
 }
 
 .join-us h2 {
@@ -274,11 +282,20 @@ footer {
   margin-top: 5px;
 }
 
+.join-us-text h4 {
+  margin: 0 0 8px 0;
+}
+
 .join-us-text p {
-  padding: 5px 0;
+  margin: 0 0 20px 0;
+}
+
+.join-us-text p:last-child {
+  margin: 0 0 0 0;
 }
 
 .where-are-we {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
