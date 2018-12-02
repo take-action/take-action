@@ -21,6 +21,15 @@ body {
 .orangered {
     color: orangered;
 }
+.gradient {
+  height: 100px;
+  background-color: orangered;
+  background-image:
+    radial-gradient(
+      orangered
+     
+    );
+}
 
 /* Navbar */
 .navbar-default {
