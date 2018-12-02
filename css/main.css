@@ -120,7 +120,7 @@ footer {
   margin: 0 auto;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: left;
   background-color: rgba(0,0,0,0.6);
   padding: 0 20px 60px 20px;
 }
