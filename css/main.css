@@ -121,6 +121,7 @@ footer {
   display: flex;
   width: 100%;
   max-width: 960px;
+  min-height: 100vh;
   margin: 0 auto;
   flex-direction: column;
   justify-content: flex-start;
@@ -130,7 +131,6 @@ footer {
 }
 
 .human-trafficking {
-  width: 900px;
   border-radius: 3%;
   margin-top: 30px;
   background-image: url("https://images.unsplash.com/photo-1486768801215-35f4fdd73abc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0d734b1c2d494778c9c2121d02ef5d4d&auto=format&fit=crop&w=500&q=60");
@@ -173,7 +173,7 @@ footer {
 
 .fact-1, .fact-2, .fact-3 {
   flex: 1;
-  margin: 10px 20px 40px 0;
+  margin: 10px 0 40px 0;
   padding: 10px;
   border-radius: 10px;
   background: linear-gradient(to bottom, #ff4500 0%, #330000 100%);
@@ -186,6 +186,14 @@ footer {
 
 .fact-1 p, .fact-2 p, .fact-3 p {
   margin: 0;
+}
+
+.fact-1 {
+  margin-right: 20px;
+}
+
+.fact-3 {
+  margin-left: 20px;
 }
 
 /* How To Help */
