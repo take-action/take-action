@@ -1,7 +1,3 @@
-/* * {
-  outline: 1px solid red;
-} */
-
 header, body, footer {
   padding: 0;
   margin: 0;
@@ -20,16 +16,6 @@ body {
 
 .orangered {
     color: orangered;
-}
-
-.gradient {
-  height: 100px;
-  background-color: orangered;
-  background-image:
-    radial-gradient(
-      orangered
-
-    );
 }
 
 /* Navbar */
@@ -71,14 +57,14 @@ body {
 
 /* Footer */
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    padding: 15px 10px;
-    display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 15px 10px;
+  display: flex;
 }
 
 .statement, .traffic-count, .timer {
@@ -131,7 +117,6 @@ footer {
 }
 
 /* The Problem */
-
 .content {
   display: flex;
   width: 100%;
@@ -188,10 +173,10 @@ footer {
 
 .fact-1, .fact-2, .fact-3 {
   flex: 1;
-  margin: 0 20px;
+  margin: 10px 20px 40px 0;
   padding: 10px;
   border-radius: 10px;
-  background: linear-gradient(to bottom, #ff4500 0%, #000000 100%);
+  background: linear-gradient(to bottom, #ff4500 0%, #330000 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -442,6 +427,7 @@ footer {
   align-self: stretch;
 }
 
+/* Responsive */
 @media screen and (max-width: 767px) {
     .title-page {
       margin-top: 50px;
